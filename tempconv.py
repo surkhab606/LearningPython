@@ -10,3 +10,6 @@ elif userInput == 2:
     result2 = (prompt2 - 32) / 1.8
     print(f"The temperature you inputted in Celsius is: {result2} Celsius")
 
+else:
+    print("Invalid input.")
+
