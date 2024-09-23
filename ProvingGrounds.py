@@ -1,23 +1,13 @@
-name = "Surkhab"
-print(f"Hello {name}")
-age = 19
-print(f"You are {age} years old")
-price = 10.99
-print(f"The price of that is {price}")
-student = True
 
-if age and student:
-    print("You are young and studious!")
+userName = input("Please enter a username that is no more than 12 characters, has no spaces and no digits: ")
 
-age = float(age)
-print(age)
-price = int(price)
-print(price)
-student = str(student)
-print(student)
-name = bool(name)
-print(name)
-age = bool(age)
-print(age)
-age = 19 / price
-print(age)
+if len(userName) > 12:
+    print("Username is over 12 characters.")
+
+elif userName.count(" ") > 0:
+    print("No spaces allowed.")
+
+elif not userName.isalpha():
+    print("No digits allowed.")
+
+
