@@ -1,10 +1,23 @@
+name = "Surkhab"
+print(f"Hello {name}")
+age = 19
+print(f"You are {age} years old")
+price = 10.99
+print(f"The price of that is {price}")
+student = True
 
+if age and student:
+    print("You are young and studious!")
 
-rows = int(input("Enter the number of rows: "))
-columns = int(input("Enter the number of columns: "))
-symbol = input("Enter a symbol to use: ")
-
-for x in range(rows):
-    for y in range(columns):
-        print(symbol, end="")
-    print()
+age = float(age)
+print(age)
+price = int(price)
+print(price)
+student = str(student)
+print(student)
+name = bool(name)
+print(name)
+age = bool(age)
+print(age)
+age = 19 / price
+print(age)
