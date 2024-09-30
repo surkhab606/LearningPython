@@ -1,3 +1,10 @@
-fruit = ["pineapple", "apple", "banana"]
+fruits = ["apple", "orange", "pomegranate"]
+vegetables = ["carrot", "broccoli", "celery"]
+meats = ["pepperoni", "beef", "chicken"]
 
-PRI
+groceries = [fruits, vegetables, meats]
+
+for foodType in groceries:
+    for food in foodType:
+        print(food, end=" ")
+    print()
