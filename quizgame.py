@@ -4,7 +4,11 @@ questions = ("What is the smallest country in the world?",
              "Which planet in our solar system has the most moons?",
              "What is the name of the first satellite sent into space?")
 
-options = (("", "", "", ""), (), (), (), ())
+options = (("A. Monaco", "B. Vatican City", "C. San Marino", "D. Liechtenstein"),
+           ("A. Africa", "B. Europe", "C. Australia", "D. Antarctica"),
+           ("A. Mars", "B. Venus", "C. Mercury", "D. Jupiter"),
+           ("A. Jupiter", "B. Saturn", "C. Uranus", "D. Neptune"),
+           ("A. Sputnik 1", "B. Explorer 1", "C. Apollo 1", "D. Apollo 10"))
 
 answers = ()
 guesses = []
