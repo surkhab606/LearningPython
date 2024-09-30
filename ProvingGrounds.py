@@ -1,10 +1,9 @@
-fruits = ["apple", "orange", "pomegranate"]
-vegetables = ["carrot", "broccoli", "celery"]
-meats = ["pepperoni", "beef", "chicken"]
+num_pad = ((1, 2, 3),
+           (4, 5, 6),
+           (7, 8, 9),
+           ("*", 0, "#"))
 
-groceries = [fruits, vegetables, meats]
-
-for foodType in groceries:
-    for food in foodType:
-        print(food, end=" ")
+for row in num_pad:
+    for num in row:
+        print(num, end=" ")
     print()
