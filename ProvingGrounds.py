@@ -3,4 +3,7 @@ johnson = ["johnson"]
 car = ["camaro"]
 total = [fruit, johnson, car]
 
-print(total[0][0])
+for element in total:
+    for sub_element in element:
+        print(sub_element, end="")
+    print()
