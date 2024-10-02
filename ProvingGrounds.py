@@ -4,5 +4,8 @@ models = {"CLE53": "AMG",
           "CLE450": "AMG-line"}
 
 models.update({"CLE63S": "AMG Performance"})
-print(models)
+models.pop("CLE63S")
+
+for key, value in models.items():
+    print(f"{key}:{value}")
 
