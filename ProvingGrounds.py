@@ -1,3 +1,6 @@
 fruit = ["pineapple"]
+johnson = ["johnson"]
+car = ["camaro"]
+total = [fruit, johnson, car]
 
-print("pineapple" in fruit)
+print(total[0][0])
