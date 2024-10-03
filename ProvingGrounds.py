@@ -1,11 +1,14 @@
-models = {"CLE53": "AMG",
-          "CLE63": "AMG",
-          "CLE300": "Base",
-          "CLE450": "AMG-line"}
+questions = ("Q1",
+             "Q2",
+             "Q3",
+             "Q4",
+             "Q5")
 
-models.update({"CLE63S": "AMG Performance"})
-models.pop("CLE63S")
+answers = ("A. B. C. D.",
+           "A. B. C. D.",
+           "A. B. C. D.",
+           "A. B. C. D.",
+           "A. B. C. D.")
 
-for key, value in models.items():
-    print(f"{key}:{value}")
+score = 0
 
