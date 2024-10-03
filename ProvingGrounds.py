@@ -1,14 +1,11 @@
-questions = ("Q1",
-             "Q2",
-             "Q3",
-             "Q4",
-             "Q5")
+potential = {"AMG CLE63": "Mercedes",
+             "M4 Competition xDrive": "BMW",
+             "RS5 Coupe": "Audi"}
 
-answers = ("A. B. C. D.",
-           "A. B. C. D.",
-           "A. B. C. D.",
-           "A. B. C. D.",
-           "A. B. C. D.")
 
-score = 0
+for key, value in potential.items():
+    print(f"{key}: {value}")
+
+
+
 
