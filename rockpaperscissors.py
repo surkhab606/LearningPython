@@ -1,40 +1,47 @@
-# I know I have to implement random so that the computer picks a random move.
 import random
 
 # Using a list to store all the moves the computer can play
 moves = ["R", "P", "S"]
 
-# Choice method will choose a random "move" from the list.
-comp_move = random.choice(moves)
+# Main gameplay loop
+running = True
 
 # Decorative text
 print("PLAY ROCK PAPER SCISSORS AGAINST A COMPUTER! SEE IF YOU CAN WIN!")
+print("----------------------------------------------------------------")
 
-# User plays.
-user_move1 = input("Press R to play rock. Press P to play paper. Press S to play scissors. ")
+while running:
+    # Computer randomly selects a move
+    comp_move = random.choice(moves)
 
-if user_move1 == "R":
-    if comp_move == "R":
-        print("Computer played rock. Tie!")
-    elif comp_move == "P":
-        print("Computer played paper. Computer wins!")
-    elif comp_move == "S":
-        print("Computer played scissors. You win!")
+    # User plays
+    user_move = input("Press R to play rock. Press P to play paper. Press S to play scissors: ").upper()
 
-elif user_move1 == "P":
-    if comp_move == "R":
-        print("Computer played rock. You win!")
-    elif comp_move == "P":
-        print("Computer played paper. Tie!")
-    elif comp_move == "S":
-        print("Computer played scissors. Computer wins!")
+    print("----------------------------------------------------------------")
+    # Print computer and user plays
+    print(f"Computer played: {comp_move}")
+    print(f"User played: {user_move}")
+    print("----------------------------------------------------------------")
 
-elif user_move1 == "S":
-    if comp_move == "R":
-        print("Computer played rock. Computer wins!")
-    elif comp_move == "P":
-        print("Computer played paper. You win!")
-    elif comp_move == "S":
-        print("Computer played scissors. Tie!")
+    # Decide the outcome
+    if comp_move == user_move:
+        print("Tie!")
 
+    elif (comp_move == "R" and user_move == "S") or \
+            (comp_move == "S" and user_move == "P") or \
+            (comp_move == "P" and user_move == "R"):
+        print("Computer wins!")
 
+    else:
+        print("You win!")
+
+    # Ask if the user wants to play again
+    decision = input("Continue playing? Y/N: ").upper()
+
+    if decision == "N":
+        running = False
+    elif decision != "Y":
+        print("Invalid input. Ending game.")
+        running = False
+
+print("Game over!")
