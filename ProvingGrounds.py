@@ -1,7 +1,8 @@
-def add(x, y):
-    ww = x + y
-    return ww
+def create_name(first, last):
+    first = first.capitalize()
+    last = last.capitalize()
+    return first + " " + last
 
 
-z = add(1, 2)
+z = create_name("surkhab", "mundi")
 print(z)
