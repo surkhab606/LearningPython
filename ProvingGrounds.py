@@ -1,5 +1,9 @@
-def net_price(list_price, discount=0, tax=0.05):
-    return list_price * (1 - discount) * (1 + tax)
+import time
 
+def count(start, end):
+    for x in range(start, end+1):
+        print(x)
+        time.sleep(1)
+    print("DONE!")
 
-print(net_price(500))
+count(0, 10)
