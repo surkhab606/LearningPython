@@ -1,6 +1,7 @@
-def display_invoice(username, amount, due_date):
-    return f"Hello, {username}. You have ${amount:.2f} due in {due_date} days."
+def add(x, y):
+    ww = x + y
+    return ww
 
-test = display_invoice("Surkhab", 10, 4)
-print(test)
 
+z = add(1, 2)
+print(z)
