@@ -1,8 +1,4 @@
-def create_name(first, last):
-    first = first.capitalize()
-    last = last.capitalize()
-    return first + " " + last
+def net_price(list_price, discount, tax):
+    return list_price * (1 - discount) * (1 + tax)
 
-
-z = create_name("surkhab", "mundi")
-print(z)
+print(net_price(500, 0, 0.05))
