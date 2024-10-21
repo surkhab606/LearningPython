@@ -1,10 +1,10 @@
+def shipping_label(*args, **kwargs):
+    for arg in args:
+        print(arg, end=" ")
+    print()
+    for value in kwargs.values():
+        print(value, end=" ")
 
-def print_address(**kwargs):
-    for key, value in kwargs.items():
-        print(f"{key}:{value}")
 
-print_address(street = "123 Fake St",
-              city = "Detroit",
-              state = "MI",
-              zip = "54321")
-
+shipping_label("Dr.", "Spongebob", "Squarepants",
+               street="123 Fake St", apt="100", city="Detroit", state="MI")
