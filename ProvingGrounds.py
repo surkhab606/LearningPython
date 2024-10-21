@@ -1,8 +1,7 @@
 
+def display_name(*args):
+    for arg in args:
+        print(arg, end=" ")
 
-def get_phone(country, area, first, last):
-    return f"{country}-{area}-{first}-{last}"
+display_name("Spongebob", "Squarepants")
 
-phone_num = get_phone(country=1, area=123, first=456, last=7890)
-
-print(phone_num)
