@@ -1,7 +1,10 @@
 
-def display_name(*args):
-    for arg in args:
-        print(arg, end=" ")
+def print_address(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}:{value}")
 
-display_name("Spongebob", "Squarepants")
+print_address(street = "123 Fake St",
+              city = "Detroit",
+              state = "MI",
+              zip = "54321")
 
