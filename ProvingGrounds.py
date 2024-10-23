@@ -1,10 +1,5 @@
-def shipping_label(*args, **kwargs):
-    for arg in args:
-        print(arg, end=" ")
-    print()
-    for value in kwargs.values():
-        print(value, end=" ")
+def camaro(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}:{value}")
 
-
-shipping_label("Dr.", "Spongebob", "Squarepants",
-               street="123 Fake St", apt="100", city="Detroit", state="MI")
+print(camaro(Z28 = "5.7L", RallySport = "5.0L", Berlinetta = "5.0L", TypeLT = "4.6L"))
