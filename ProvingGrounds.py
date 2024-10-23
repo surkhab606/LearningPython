@@ -1,5 +1,12 @@
-def camaro(**kwargs):
-    for key, value in kwargs.items():
-        print(f"{key}:{value}")
+grades = {"Sandy": "A",
+          "Squidward": "B",
+          "Spongebob": "C",
+          "Patrick": "D"}
 
-print(camaro(Z28 = "5.7L", RallySport = "5.0L", Berlinetta = "5.0L", TypeLT = "4.6L"))
+student = input("Please enter the student's name: ")
+
+if student in grades:
+    print(f"{student}'s grades are: {grades[student]}")
+
+else:
+    print("Student not found.")
