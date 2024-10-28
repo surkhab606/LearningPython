@@ -22,4 +22,4 @@ while user_guess != comp_number:
         print("Too low! Try again!")
         user_guess = int(input("Please guess the number: "))
 
-print("You got it!")
+print(f"You got it! The number was {comp_number}")
