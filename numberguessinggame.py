@@ -5,12 +5,12 @@ user_range2 = int(input("Please enter the second number in the range of numbers 
 
 comp_number = random.randint(user_range, user_range2)
 
-print("The Computer has selected a random number within your range.")
+print(f"The Computer has selected a random number within your range of {user_range} to {user_range2}.")
 user_guess = int(input("Please guess the number: "))
 
 while user_guess != comp_number:
 
-    if user_guess < user_range or user_guess > user_range2:
+    while user_guess < user_range or user_guess > user_range2:
         print("Out of bounds. Try again!")
         user_guess = int(input("Please guess the number: "))
 
