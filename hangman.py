@@ -1,4 +1,6 @@
+import random
 
+word_list = ["BMW", "UTAHRAPTOR", "CATERPILLAR", "DINOSAUR", "ELEPHANT", "MACBOOK",
+             "LESBIAN", "KATE", "CANYON", "ABSOLUTE", "MAXIMUM", "MINIMUM"]
 
-word_list = ["BMW", "CAR", "CATERPILLAR", "DINOSAUR", "ELEPHANT", "MACBOOK",
-             "LESBIAN", "KATE", ]
+comp_word = random.choice(word_list)
