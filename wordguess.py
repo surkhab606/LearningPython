@@ -19,12 +19,15 @@ while turns > 0:
         print(f"You have successfully guessed the following letters: {display_list}")
         user_guess = input("Please guess another letter: ")
         turns -= 1
+        print(f"Turns remaining: {turns}")
 
     else:
         print(f"\n{user_guess} is not in the word.")
         print(f"You have successfully guessed the following letters: {display_list}")
         user_guess = input("Please guess another letter: ")
         turns -= 1
+        print(f"Turns remaining: {turns}")
+
 
 
 user_word = input(f"\nYou are out of turns. Please guess the word: ")
