@@ -1,8 +1,8 @@
 new_list = ["Johnson", "Canyon", "Mountain", "Leaf-Springs"]
 
 
-def our_print(s):
-    print(s)
+def times_2(x):
+    return x * 2
 
 
-our_print("Johnson")
+print(times_2(1999909999))
