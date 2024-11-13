@@ -1,13 +1,7 @@
 
-grocery_list = ["banana", "orange"]
-
-for i, item in enumerate(grocery_list):
-    print(i, item)
+new_list = ["Johnson", "Canyon", "Mountain", "Leaf-Springs"]
 
 
-i = 0
-
-while i < len(grocery_list):
-    print(grocery_list)
-    i += 1
+for x, item in enumerate(new_list):
+    print(x, item)
 
