@@ -7,3 +7,7 @@ def append_4_to_list(lst):
 
 append_4_to_list(new_list)
 print(new_list)
+
+b = new_list
+
+print(b == new_list)
