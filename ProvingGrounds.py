@@ -10,4 +10,4 @@ print(new_list)
 
 b = new_list
 
-print(b == new_list)
+print(b is new_list)
