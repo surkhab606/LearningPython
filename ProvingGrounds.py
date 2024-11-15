@@ -17,3 +17,9 @@ b = new_list
 print(our_print("Johnson"))
 
 print(b is new_list)
+
+from copy import deepcopy
+
+b = deepcopy(new_list)
+
+print(b)
