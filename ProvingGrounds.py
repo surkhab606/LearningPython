@@ -1,6 +1,5 @@
+def add(a, b, c=4):
+    return a + b + c
 
-def add(a, b):
-    return a + b
 
-print(add(1,100))
-
+print(add(1, 100))
